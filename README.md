@@ -1,4 +1,4 @@
-# GGR472: Lab 1
+# GGR472: Lab 2
  
 This repository contains the code for an integrated webmap using MapBox Studio and MapBox GL JS.
 
