@@ -1,0 +1,72 @@
+/*styling for the MapBox integration*/
+.map {
+    position: absolute;
+    top:5.7%;
+    bottom: 0;
+    width: 65%;
+}
+
+/*styling for the title and subtitle*/
+.header {
+    background-color: rgb(88, 93, 95);
+    color: rgb(231, 226, 226)
+}
+
+/*styling for text*/
+.paragraph {
+    color: rgb(231, 226, 226)
+}
+
+/*styling for the GIF on the home page*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*contains the image and the text box where the fade in will apply*/
+.container {
+    position: relative;
+    width: 50%;
+}
+/* bounding box for the image link and sizing*/
+.image {
+    opacity: 1;
+    transition: .5s ease;
+    width: 50%;
+    backface-visibility: hidden;
+    padding: 16px 4px;
+}
+/* the text box is created and centered on the image, animation is applied*/
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*creates a transparent cover over the image with a specified opacity (creates the wash out effect)*/
+.container:hover .image {
+    opacity: 0.3;
+    margin-left: 15%;
+
+}
+
+/*displays the textbox as opaque overlaid on top of the image */
+.container:hover .middle {
+    opacity: 1;
+    margin-left: 15%;
+
+}
+
+/*creates a box around the text with a colour, with specifications on box size*/
+.text {
+    background-color: rgb(88, 93, 95);
+    color: rgb(252, 207, 7);
+    font-size: 16px;
+    padding: 16px 32px;
+}
